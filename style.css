@@ -1,0 +1,106 @@
+@keyframes picture_move {
+    from {
+        transform: translate3d(500px, 0px, 0px);
+    }
+    to {
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+@keyframes picture_rotate {
+    from {
+        transform: rotateZ(180deg);
+    }
+    to {
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+@keyframes picture_visi {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes my_name_move {
+    from {
+        transform: translate3d(-500px, 0px, 0px);
+    }
+    to {
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+@keyframes my_name_visi {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #325248;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#flexContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#flex_spacer_1 {
+    flex: 0 0 50px;
+}
+
+#flex_my_face {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    animation-name: picture_move;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+#myFace {
+    max-height: 200px;
+    border-radius: 50%;
+    animation-name: picture_rotate;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+#my_face_visi {
+    animation-name: picture_visi;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-fill-mode: backwards;
+}
+
+#flex_my_name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-name: my_name_visi;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.1s;
+    animation-fill-mode: backwards;
+}
+
+#my_name {
+    color: #FFFFFF;
+}
