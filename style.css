@@ -1,6 +1,6 @@
 @keyframes picture_move {
     from {
-        transform: translate3d(500px, 0px, 0px);
+        transform: translate3d(50px, 0px, 0px);
     }
     to {
         justify-content: center;
@@ -10,7 +10,7 @@
 
 @keyframes picture_rotate {
     from {
-        transform: rotateZ(180deg);
+        transform: rotateZ(90deg);
     }
     to {
         justify-content: center;
@@ -29,7 +29,7 @@
 
 @keyframes my_name_move {
     from {
-        transform: translate3d(-500px, 0px, 0px);
+        transform: translate3d(0px, 10px, 0px);
     }
     to {
         justify-content: center;
@@ -46,18 +46,60 @@
     }
 }
 
-body {
-    background-color: #325248;
-    font-family: 'Montserrat', sans-serif;
+@keyframes my_email_visi {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-#flexContainer {
+@keyframes my_email_move {
+    from {
+        transform: translate3d(-15px, 0px, 100px);
+    }
+    to {
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+@keyframes my_edu_visi {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes my_edu_move {
+    from {
+        transform: translate3d(15px, 0px, 100px);
+    }
+    to {
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+body {
+    background-color: #FFFFFF;
+    font-family: 'B612', sans-serif;
+}
+
+#projectsContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
 }
 
-#flex_spacer_1 {
+.flex_spacer_1 {
+    flex: 0 0 100px;
+}
+
+#flex_spacer_2 {
     flex: 0 0 50px;
 }
 
@@ -68,17 +110,16 @@ body {
     animation-name: picture_move;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
 }
 
 #myFace {
     max-height: 200px;
-    border-radius: 50%;
-    animation-name: picture_rotate;
+    border-radius: 15%;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
 }
 
@@ -86,7 +127,7 @@ body {
     animation-name: picture_visi;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
-    animation-delay: 0.5s;
+    animation-delay: 1s;
     animation-fill-mode: backwards;
 }
 
@@ -94,7 +135,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    animation-name: my_name_visi;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-delay: 1.1s;
@@ -102,5 +142,695 @@ body {
 }
 
 #my_name {
-    color: #FFFFFF;
+    color: #616161;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.1s;
+    animation-fill-mode: backwards;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#flex_my_email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: backwards;
+}
+
+#my_email {
+    color: #616161;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: backwards;
+    text-align: center;
+}
+
+#flex_my_education {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: backwards;
+}
+
+#my_education {
+    color: #616161;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1.6s;
+    animation-fill-mode: backwards;
+    text-align: center;
+}
+
+#grey_background {
+    color: #616161;
+    flex: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#flex_my_experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#experience {
+    color: #616161;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#experience_div {
+    color: #616161;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-auto-rows: auto;
+    justify-content: center;
+}
+
+#experience_graph {
+    background-color: #e3e3e3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-width: 10px;
+}
+
+.experience_item {
+    display: flex;
+    margin-left: 5px;
+    margin-right: 5px;
+    justify-content: center;
+}
+
+#html_item {
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes html_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 60%;
+        visibility: visible;
+    }
+}
+
+@keyframes html_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 40%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#html_filled {
+    animation-name: html_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 60%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#html_unfilled {
+    animation-name: html_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 40%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes css_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 50%;
+        visibility: visible;
+    }
+}
+
+@keyframes css_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 50%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#css_item {
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#css_filled {
+    animation-name: css_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 50%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#css_unfilled {
+    animation-name: css_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 50%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#javascript_item {
+    flex: 10%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes javascript_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 40%;
+        visibility: visible;
+    }
+}
+
+@keyframes javascript_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 60%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#javascript_filled {
+    animation-name: javascript_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 40%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#javascript_unfilled {
+    animation-name: javascript_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 60%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#python_item {
+    flex: 10%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes python_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 50%;
+        visibility: visible;
+    }
+}
+
+@keyframes python_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 50%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#python_filled {
+    animation-name: python_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 50%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#python_unfilled {
+    animation-name: python_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 50%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#java_item {
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes java_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 70%;
+        visibility: visible;
+    }
+}
+
+@keyframes java_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 30%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#java_filled {
+    animation-name: java_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 70%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#java_unfilled {
+    animation-name: java_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 30%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#cpp_item {
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes cpp_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 70%;
+        visibility: visible;
+    }
+}
+
+@keyframes cpp_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 30%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#cpp_filled {
+    animation-name: cpp_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 70%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#cpp_unfilled {
+    animation-name: cpp_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 30%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#r_item {
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes r_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 50%;
+        visibility: visible;
+    }
+}
+
+@keyframes r_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 50%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#r_filled {
+    animation-name: r_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 50%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#r_unfilled {
+    animation-name: r_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 50%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#linux_item {
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+@keyframes linux_fill {
+    from {
+        flex: 0%;
+    }
+    to {
+        flex: 60%;
+        visibility: visible;
+    }
+}
+
+@keyframes linux_unfill {
+    from {
+        flex: 100%
+    }
+    to {
+        flex: 40%;
+        justify-content: center;
+        visibility: visible;
+    }
+}
+
+#linux_filled {
+    animation-name: linux_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 60%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#linux_unfilled {
+    animation-name: linux_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    flex: 40%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+#experienceContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#projects {
+    color: #616161;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+#projects_div {
+    color: #616161;
+    flex: 600px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    color: #414141;
+    font-weight: bolder;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+#projects_item {
+    background: tomato;
+    padding: 5px;
+    width: 200px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
 }
