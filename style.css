@@ -99,7 +99,7 @@ body {
     flex: 0 0 100px;
 }
 
-#flex_spacer_2 {
+.flex_spacer_2 {
     flex: 0 0 50px;
 }
 
@@ -211,7 +211,7 @@ body {
 #experience_div {
     color: #616161;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 10% 80% 10%;
     grid-auto-rows: auto;
     justify-content: center;
 }
@@ -792,7 +792,7 @@ body {
     text-align: center;
 }
 
-#experienceContainer {
+#flexContainer {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -821,11 +821,14 @@ body {
     flex-basis: 0;
 }
 
+.hws {}
+
+.savethecook {}
+
 #projects_item {
-    background: tomato;
-    padding: 5px;
+    /*background: tomato;*/
     width: 200px;
-    height: 150px;
+    height: 200px;
     margin-top: 30px;
     margin-bottom: 30px;
     line-height: 150px;
