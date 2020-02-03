@@ -756,11 +756,9 @@ body {
     }
 }
 
-#linux_filled {
+.linux_fill_change {
     animation-name: linux_fill;
     animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
     flex: 60%;
     background: #41CC89;
     padding: 5px;
@@ -774,12 +772,46 @@ body {
     text-align: center;
 }
 
-#linux_unfilled {
+.linux_filled {
+    /*animation-name: linux_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;*/
+    animation-fill-mode: backwards;
+    flex: 0%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.linux_unfill_change {
     animation-name: linux_unfill;
     animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
     flex: 40%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.linux_unfilled {
+    /*animation-name: linux_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;*/
+    animation-fill-mode: backwards;
+    flex: 100%;
     background: rgb(137, 207, 173);
     padding: 5px;
     height: 25px;
@@ -813,6 +845,8 @@ body {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     color: #414141;
     font-weight: bolder;
     justify-content: space-around;
