@@ -686,11 +686,45 @@ body {
     }
 }
 
-#r_filled {
+.r_filled {
+    /*animation-name: r_fill;
+    animation-duration: 2s;
+    animation-delay: 2s;*/
+    animation-fill-mode: backwards;
+    flex: 0%;
+    background: #41CC89;
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.r_unfilled {
+    /*animation-name: r_unfill;
+    animation-duration: 2s;
+    animation-delay: 2s;*/
+    animation-fill-mode: backwards;
+    flex: 100%;
+    background: rgb(137, 207, 173);
+    padding: 5px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+}
+
+.r_fill_change {
     animation-name: r_fill;
     animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
     flex: 50%;
     background: #41CC89;
     padding: 5px;
@@ -704,11 +738,9 @@ body {
     text-align: center;
 }
 
-#r_unfilled {
+.r_unfill_change {
     animation-name: r_unfill;
     animation-duration: 2s;
-    animation-delay: 2s;
-    animation-fill-mode: backwards;
     flex: 50%;
     background: rgb(137, 207, 173);
     padding: 5px;
