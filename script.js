@@ -1,9 +1,9 @@
 window.onscroll = function() {
     this.console.log(window.pageYOffset)
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop,
-        skillsBox = document.getElementById('myFace'),
+    //var scrolled = window.pageYOffset || document.documentElement.scrollTop,
+      var skillsBox = document.getElementById('myFace'),
         linFill = document.getElementById('lin_fill'),
-        linUnfill = document.getElementById('lin_unfill');
+        linUnfill = document.getElementById('lin_unfill'),
         rFill = document.getElementById('r_fill'),
         rUnfill = document.getElementById('r_unfill');
     this.console.log(skillsBox.offsetTop)
