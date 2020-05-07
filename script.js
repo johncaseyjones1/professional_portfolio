@@ -1,5 +1,5 @@
-window.onscroll = function() {
-    this.console.log(window.pageYOffset)
+//window.onscroll = function() {
+    /*this.console.log(window.pageYOffset)
     //var scrolled = window.pageYOffset || document.documentElement.scrollTop,
       var skillsBox = document.getElementById('myFace'),
         linFill = document.getElementById('lin_fill'),
@@ -16,5 +16,5 @@ window.onscroll = function() {
         rUnfill.className = 'r_unfill_change';
 
     }
-    if (scrolled => imgLeft.height) {}
-}
+    if (scrolled => imgLeft.height) {}*/
+//}

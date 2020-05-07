@@ -371,7 +371,7 @@ body {
 }
 
 #javascript_item {
-    flex: 10%;
+    /*flex: 10%;*/
     background: #41CC89;
     padding: 5px;
     height: 25px;
@@ -442,7 +442,7 @@ body {
 }
 
 #python_item {
-    flex: 10%;
+    /*flex: 10%;*/
     background: #41CC89;
     padding: 5px;
     height: 25px;
@@ -460,7 +460,7 @@ body {
         flex: 0%;
     }
     to {
-        flex: 50%;
+        flex: 70%;
         visibility: visible;
     }
 }
@@ -470,7 +470,7 @@ body {
         flex: 100%
     }
     to {
-        flex: 50%;
+        flex: 30%;
         justify-content: center;
         visibility: visible;
     }
@@ -481,7 +481,7 @@ body {
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: backwards;
-    flex: 50%;
+    flex: 70%;
     background: #41CC89;
     padding: 5px;
     height: 25px;
@@ -499,7 +499,7 @@ body {
     animation-duration: 2s;
     animation-delay: 2s;
     animation-fill-mode: backwards;
-    flex: 50%;
+    flex: 30%;
     background: rgb(137, 207, 173);
     padding: 5px;
     height: 25px;
@@ -687,44 +687,10 @@ body {
 }
 
 .r_filled {
-    /*animation-name: r_fill;
-    animation-duration: 2s;
-    animation-delay: 2s;*/
-    animation-fill-mode: backwards;
-    flex: 0%;
-    background: #41CC89;
-    padding: 5px;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-}
-
-.r_unfilled {
-    /*animation-name: r_unfill;
-    animation-duration: 2s;
-    animation-delay: 2s;*/
-    animation-fill-mode: backwards;
-    flex: 100%;
-    background: rgb(137, 207, 173);
-    padding: 5px;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-}
-
-.r_fill_change {
     animation-name: r_fill;
     animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
     flex: 50%;
     background: #41CC89;
     padding: 5px;
@@ -738,9 +704,11 @@ body {
     text-align: center;
 }
 
-.r_unfill_change {
+.r_unfilled {
     animation-name: r_unfill;
     animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
     flex: 50%;
     background: rgb(137, 207, 173);
     padding: 5px;
@@ -788,9 +756,11 @@ body {
     }
 }
 
-.linux_fill_change {
+.linux_filled {
     animation-name: linux_fill;
     animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
     flex: 60%;
     background: #41CC89;
     padding: 5px;
@@ -804,46 +774,12 @@ body {
     text-align: center;
 }
 
-.linux_filled {
-    /*animation-name: linux_fill;
-    animation-duration: 2s;
-    animation-delay: 2s;*/
-    animation-fill-mode: backwards;
-    flex: 0%;
-    background: #41CC89;
-    padding: 5px;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-}
-
-.linux_unfill_change {
+.linux_unfilled {
     animation-name: linux_unfill;
     animation-duration: 2s;
-    flex: 40%;
-    background: rgb(137, 207, 173);
-    padding: 5px;
-    height: 25px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    line-height: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
-    text-align: center;
-}
-
-.linux_unfilled {
-    /*animation-name: linux_unfill;
-    animation-duration: 2s;
-    animation-delay: 2s;*/
+    animation-delay: 2s;
     animation-fill-mode: backwards;
-    flex: 100%;
+    flex: 40%;
     background: rgb(137, 207, 173);
     padding: 5px;
     height: 25px;
@@ -887,11 +823,20 @@ body {
     flex-basis: 0;
 }
 
+#projects_item a {
+    color: #616161;
+    
+}
+
+#proejcts_item {
+    
+}
+
 .hws {}
 
 .savethecook {}
 
-#projects_item {
+#projects_pic {
     /*background: tomato;*/
     width: 200px;
     height: 200px;
@@ -902,4 +847,5 @@ body {
     font-weight: bold;
     font-size: 3em;
     text-align: center;
+    border-radius: 10%;
 }
