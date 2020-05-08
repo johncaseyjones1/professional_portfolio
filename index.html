@@ -7,151 +7,166 @@
 <!--<![endif]-->
 
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Casey Jones</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Casey Jones</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=B612&display=swap" rel="stylesheet">
 
 
 </head>
 
 <body>
-    <!--[if lt IE 7]>
+  <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #41CC89; color: #616161; ">
-        <a class="navbar-brand" href="#" style="color: #414141;">Casey Jones</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #41CC89; color: #616161; ">
+    <a class="navbar-brand" href="#" style="color: #414141;">Casey Jones</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Education<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projectsContainer">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div id="flexContainer">
-        <div class="flex_spacer_1"></div>
-        <div id="flex_my_face">
-            <div id="my_face_visi">
-                <img src="images/my_face.png" alt=" " id="myFace">
-            </div>
-        </div>
-        <div class="flex_spacer_1"></div>
-        <div id="flex_my_name">
-            <h3 id="my_name">Casey Jones</h3>
-        </div>
-
-        <div id="flex_my_education">
-            <h6 id="my_education">Computer Science student at Brigham Young University</h6>
-        </div>
-
-        <div class="flex_spacer_1"></div>
-
-        <div id="flex_my_experience">
-            <h3 id="experience">Experience</h3>
-        </div>
-
-        <div class="flex_spacer_2"></div>
-
-        <div id="experience_div">
-            <div id="experience_graph">
-                <div class="experience_item">
-                    <div id="html_item">HTML</div>
-                    <div id="html_filled"></div>
-                    <div id="html_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="css_item">CSS</div>
-                    <div id="css_filled"></div>
-                    <div id="css_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="javascript_item">JAVASCRIPT</div>
-                    <div id="javascript_filled"></div>
-                    <div id="javascript_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="python_item">PYTHON</div>
-                    <div id="python_filled"></div>
-                    <div id="python_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="java_item">JAVA</div>
-                    <div id="java_filled"></div>
-                    <div id="java_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="cpp_item">C++</div>
-                    <div id="cpp_filled"></div>
-                    <div id="cpp_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="r_item">R</div>
-                    <div id="r_fill" class="r_filled"></div>
-                    <div id="r_unfill" class="r_unfilled"></div>
-                </div>
-                <div class="experience_item">
-                    <div id="linux_item">Linux</div>
-                    <div id="lin_fill" class="linux_filled"></div>
-                    <div id="lin_unfill" class="linux_unfilled"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="flex_spacer_1"></div>
-
-        <div id="projectsContainer">
-            <div id="grey_background">
-                <h3 id="projects">Projects</h3>
-            </div>
-            <div id="projects_div">
-                <div id="projects_item">
-                    <a href="https://github.com/johncaseyjones1/Homework_Scheduler" target="_blank">
-                        <img class="hws" id="projects_pic" src="images/hws.png"></img>
-                        <h5>Homework Scheduler</h5>
-                    </a>
-                </div>
-                <div id="projects_item">
-                <a href="https://github.com/johncaseyjones1/savethecook" target="_blank">
-                    <img class="savethecook" id="projects_pic" src="images/savethecook.png"></img>
-                    <h5>Save the Cook</h5>
-                </a>
-                </div>
-                <div id="projects_item">
-                <img class="family_tree" id="projects_pic"></img>
-                </div>
-            </div>
-        </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Education<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projectsContainer">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
     </div>
-;
+  </nav>
+
+  <div id="flexContainer">
+    <div class="flex_spacer_1"></div>
+    <div id="flex_my_face">
+      <div id="my_face_visi">
+        <img src="images/my_face.png" alt=" " id="myFace">
+      </div>
+    </div>
+    <div class="flex_spacer_1"></div>
+    <div id="flex_my_name">
+      <h3 id="my_name">Casey Jones</h3>
+    </div>
+
+    <div id="flex_my_education">
+      <h6 id="my_education">Bioinformatics student at Brigham Young University</h6>
+    </div>
+
+    <div class="flex_spacer_1"></div>
+
+    <div id="flex_my_experience">
+      <h3 id="experience">Experience</h3>
+    </div>
+
+    <div class="flex_spacer_2"></div>
+
+    <div id="experience_div">
+      <div id="experience_graph">
+        <div class="experience_item">
+          <div id="html_item">HTML</div>
+          <div id="html_filled"></div>
+          <div id="html_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="css_item">CSS</div>
+          <div id="css_filled"></div>
+          <div id="css_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="javascript_item">JAVASCRIPT</div>
+          <div id="javascript_filled"></div>
+          <div id="javascript_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="python_item">PYTHON</div>
+          <div id="python_filled"></div>
+          <div id="python_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="java_item">JAVA</div>
+          <div id="java_filled"></div>
+          <div id="java_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="cpp_item">C++</div>
+          <div id="cpp_filled"></div>
+          <div id="cpp_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="r_item">R</div>
+          <div id="r_fill" class="r_filled"></div>
+          <div id="r_unfill" class="r_unfilled"></div>
+        </div>
+        <div class="experience_item">
+          <div id="linux_item">Linux</div>
+          <div id="lin_fill" class="linux_filled"></div>
+          <div id="lin_unfill" class="linux_unfilled"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex_spacer_1"></div>
+
+    <div id="projectsContainer">
+      <div id="grey_background">
+        <h3 id="projects">Projects</h3>
+      </div>
+      <div id="projects_div">
+        <div id="projects_item">
+          <a href="https://github.com/johncaseyjones1/Homework_Scheduler" target="_blank">
+            <img class="hws" id="projects_pic" src="images/hws.png"></img>
+          </a>
+          <a href="https://github.com/johncaseyjones1/Homework_Scheduler" target="_blank">
+            <h5>Homework Scheduler</h5>
+          </a>
+        </div>
+        <div id="projects_item">
+          <a href="https://github.com/johncaseyjones1/savethecook" target="_blank">
+            <img class="savethecook" id="projects_pic" src="images/savethecook.png"></img>
+          </a>
+          <a href="https://github.com/johncaseyjones1/Homework_Scheduler" target="_blank">
+            <h5>Save the Cook</h5>
+          </a>
+        </div>
+        <div id="projects_item">
+          <a href="https://github.com/johncaseyjones1/savethecook" target="_blank">
+            <img class="family_tree" id="projects_pic"></img>
+          </a>
+          <a href="https://github.com/johncaseyjones1/savethecook" target="_blank">
+            <h5>Third thing</h5>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex_spacer_1"></div>
+
+    <div id="contactContainer">
+      <h3 id="contact">Contact</h3>
+    </div>
+  </div>
+  ;
 
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
