@@ -877,9 +877,17 @@ body {
   border-radius: 10%;
 }
 
+#contactContainer {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
 #contact {
   color: #616161;
   margin-top: 30px;
   font-weight: bold;
-  justify-self:
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
